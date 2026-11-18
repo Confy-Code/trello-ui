@@ -25,7 +25,7 @@ export default function Sidebar() {
 
     return (
         <div className="flex ">
-            <aside className="flex flex-col sticky text-[#adaeb0] font-semibold gap-3 pl-16 py-12">
+            <aside className="flex flex-col sticky top-0 h-screen  text-[#adaeb0] font-semibold gap-3 pl-16 py-12">
                 <div role="button" onClick={() => setActiveTab('boards')} className="flex gap-2 hover:bg-[#1c2b42] w-60 p-1.5 hover:rounded-md hover:cursor-pointer ">
                     <Table width="15px" /><span>Boards</span>
                 </div>

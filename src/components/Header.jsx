@@ -18,7 +18,7 @@ export default function Header() {
     })
 
     return (
-        <header className="flex flex-row items-center gap-4 m-0 p-4 border-b border-[#434345] pb-2 pt-2 ">
+        <header className="flex flex-row items-center sticky top-0 bg-[#1f1f21] gap-4 m-0 p-4 border-b border-[#434345] pb-2 pt-2 ">
             <div className="flex w-5 shrink-0 items-center hover:bg-gray-600 hover:cursor-pointer rounded-md">
                 <LayoutGridCircles width="20px" color="white" />
             </div>
