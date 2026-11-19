@@ -4,7 +4,7 @@ import trelloBg from '../assets/trello_bg.webp'
 
 import { Clock4, Table, User, Settings } from 'lucide-react';
 
-export default function Boards() {
+export default function Boards(props) {
 
     let recentlyViewedElements = recentlyViewedData.map((name_, index) => {
         return (
@@ -14,6 +14,10 @@ export default function Boards() {
 
     return (
         <main className="pb-12">
+            <title>
+                {props.title}
+            </title>
+
             <div className="flex gap-4 text-[#cecfd2] font-bold text-lg">
                 <Clock4 color="white" /><span >Recently viewed</span>
             </div>

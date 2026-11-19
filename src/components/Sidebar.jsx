@@ -12,13 +12,13 @@ export default function Sidebar() {
     const renderTab = () => {
         switch(activeTab){
             case 'boards':
-                return <Boards />
+                return <Boards title="Boards | Trello" />
             case 'templates':
-                return <Templates />
+                return <Templates title="Templates | Trello"/>
             case 'home':
-                return <Home />
+                return <Home title="Templates | Trello" />
             default:
-                return <Boards />
+                return <Boards title="Boards | Trello" />
         }
     }
 

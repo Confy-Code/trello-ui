@@ -1,5 +1,8 @@
-export default function Home() {
+export default function Home(props) {
     return (
-        <h1>I AM THE HOME</h1>
+        <>
+            <title>{props.title}</title>
+            <h1 className="text-white">I AM THE HOME</h1>
+        </>
     )
 }

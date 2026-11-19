@@ -1,5 +1,8 @@
-export default function Templates() {
+export default function Templates(props) {
     return (
-        <h1>I AM THE TEMPLATES</h1>
+        <>
+            <title>{props.title}</title>
+            <h1 className="text-white">I AM THE TEMPLATES</h1>
+        </>
     )
 }

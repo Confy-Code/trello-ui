@@ -7,7 +7,7 @@ export default function Searchbar() {
             <input 
                 type="text"
                 placeholder="Search"
-                className="hidden lg:flex items-center pl-8 text-white border border-[#7e8188] w-180 h-8 rounded-lg"
+                className="hidden lg:flex items-center pl-8 text-white border border-[#7e8188] bg-[#242528] hover:bg-[#2e2f33] w-180 h-8 rounded-lg"
             />
         </form>
     )
