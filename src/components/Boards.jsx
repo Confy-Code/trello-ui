@@ -28,23 +28,28 @@ export default function Boards(props) {
 
             <div className="mt-12">
                 <span className="text-[#a9abaf] font-semibold">YOUR WORKSPACES</span>
-                <div className="flex mt-4 gap-54">
+                <div className="flex items-center mt-4 gap-8">
                     <div className="flex ml-0">
                         <span className="text-[#a2a4a7] font-bold">ISINGIZWE Jean Confiance's workspace</span>
                     </div>
 
-                    <section className="flex text-[#c5c6c9] font-semibold gap-4 mb-2 mt-2">
-                        <div className="flex gap-2 hover:bg-gray-600 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
-                            <Table color="#c5c6c9" width="20px" /><span>Boards</span>
+                    <section className="flex text-[#c5c6c9] font-semibold gap-4 my-2">
+                        <div className="flex gap-2 hover:opacity-70 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
+                            <Table color="#c5c6c9" width="16px" /><span className="text-[14px]">Boards  </span>
                         </div>
 
-                        <div className="flex gap-2 hover:bg-gray-600 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
-                            <User color="#c5c6c9" width="20px" /><span>Members</span>
+                        <div className="flex gap-2 hover:opacity-70 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
+                            <User color="#c5c6c9" width="16px" /><span className="text-[14px]">Members</span>
                         </div>
 
-                        <div className="flex gap-2 hover:bg-gray-600 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
-                            <Settings color="#c5c6c9" width="20px" /><span>Settings</span>
+                        <div className="flex gap-2 hover:opacity-70 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
+                            <Settings color="#c5c6c9" width="16px" /><span className="text-[14px]">Settings</span>
                         </div>
+
+                        <div className="flex gap-2 hover:bg-[#402c4b] bg-[#35243f] p-1.5 rounded-md hover:cursor-pointer">
+                            <Settings color="#c5c6c9" width="16px" /><span className="text-[14px]">Try Premium Free</span>
+                        </div>
+
                     </section>
                 </div>
 
@@ -65,7 +70,7 @@ export default function Boards(props) {
                 </div>
 
                 <section className="flex mt-4 gap-4 flex-wrap">
-                    <div className="flex-col bg-[#1f1f21] rounded-md w-60 h-30 border-b border-black hover:cursor-pointer">
+                    <div className="flex-col bg-[#1f1f21] rounded-md w-60 h-30 border-b border-black hover:cursor-pointer hover:opacity-70">
                         <img src={trelloBg} alt="Trello Background" className="flex w-full h-[70%] rounded-t-md"/>
                         <span className="text-[#aeafb2] font-medium p-1.5">Website Project Group 10</span>
                     </div>
