@@ -25,7 +25,7 @@ export default function Sidebar() {
     return (
         <>
             <div className="flex min-w-full">
-                <aside className="hidden md:flex flex-col md:fixed top-16 h-screen  text-[#adaeb0] font-semibold gap-1 pl-16 py-12">
+                <aside className="hidden lg:flex flex-col lg:fixed top-16 h-screen  text-[#adaeb0] font-semibold gap-1 pl-16 py-12">
                     <div role="button" onClick={() => setActiveTab('boards')} 
                     className={`${activeTab == "boards" ? 'bg-[#20324e] hover:bg-[#20324e] rounded-md' : 'bg-none hover:bg-[rgb(44,44,46)] hover:rounded-md'}
                     flex gap-2 w-60 p-1.5 hover:cursor-pointer`}>
@@ -50,7 +50,7 @@ export default function Sidebar() {
                 </aside>
             </div>
 
-            <main className="w-full m-6 flex pt-14 md:ml-100 md:w-200">
+            <main className="w-full m-6 flex pt-14 lg:ml-100 lg:w-200">
                     {renderTab()}
             </main>
         </>
