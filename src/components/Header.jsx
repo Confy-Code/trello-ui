@@ -30,11 +30,7 @@ export default function Header() {
 
             <Searchbar />
 
-            <button className="flex items-center justify-center font-semibold text-[#381f21] border-4 border-[#669df1] bg-[#669df1] w-16 rounded-md hover:bg-[#7ea0ee] hover:cursor-pointer">
-                Create
-            </button>
-
-            <nav className="flex ml-30 items-center gap-3">
+            <nav className="ml-6 gap-1 flex md:ml-30 items-center md:gap-3">
                 { iconElement }
             </nav>
 

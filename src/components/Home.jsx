@@ -1,7 +1,7 @@
-export default function Home(props) {
+export default function Home() {
     return (
         <>
-            <title>{props.title}</title>
+            <title>Home | Trello</title>
             <h1 className="text-white">I AM THE HOME</h1>
         </>
     )

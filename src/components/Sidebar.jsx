@@ -12,20 +12,20 @@ export default function Sidebar() {
     const renderTab = () => {
         switch(activeTab){
             case 'boards':
-                return <Boards title="Boards | Trello" />
+                return <Boards />
             case 'templates':
-                return <Templates title="Templates | Trello"/>
+                return <Templates />
             case 'home':
-                return <Home title="Home | Trello" />
+                return <Home />
             default:
-                return <Boards title="Boards | Trello" />
+                return <Boards />
         }
     }
 // COLOR = hover:bg-[#1c2b42]   
     return (
         <>
-            <div className="flex">
-                <aside className="flex flex-col fixed top-16 h-screen  text-[#adaeb0] font-semibold gap-1 pl-16 py-12">
+            <div className="flex min-w-full">
+                <aside className="hidden md:flex flex-col md:fixed top-16 h-screen  text-[#adaeb0] font-semibold gap-1 pl-16 py-12">
                     <div role="button" onClick={() => setActiveTab('boards')} 
                     className={`${activeTab == "boards" ? 'bg-[#20324e] hover:bg-[#20324e] rounded-md' : 'bg-none hover:bg-[rgb(44,44,46)] hover:rounded-md'}
                     flex gap-2 w-60 p-1.5 hover:cursor-pointer`}>
@@ -50,7 +50,7 @@ export default function Sidebar() {
                 </aside>
             </div>
 
-            <main className="flex pt-14 ml-100 w-200">
+            <main className="w-full m-6 flex pt-14 md:ml-100 md:w-200">
                     {renderTab()}
             </main>
         </>

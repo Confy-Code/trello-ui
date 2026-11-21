@@ -1,7 +1,7 @@
-export default function Templates(props) {
+export default function Templates() {
     return (
         <>
-            <title>{props.title}</title>
+            <title> Templates | Trello</title>
             <h1 className="text-white">I AM THE TEMPLATES</h1>
         </>
     )

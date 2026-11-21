@@ -4,7 +4,7 @@ import trelloBg from '../assets/trello_bg.webp'
 
 import { Clock4, Table, User, Settings } from 'lucide-react';
 
-export default function Boards(props) {
+export default function Boards() {
 
     let recentlyViewedElements = recentlyViewedData.map((name_, index) => {
         return (
@@ -13,9 +13,9 @@ export default function Boards(props) {
     })
 
     return (
-        <main className="pb-12">
+        <main className="pb-12 max-w-screen">
             <title>
-                {props.title}
+                Boards | Trello
             </title>
 
             <div className="flex gap-4 text-[#cecfd2] font-bold text-lg">
@@ -28,12 +28,12 @@ export default function Boards(props) {
 
             <div className="mt-12">
                 <span className="text-[#a9abaf] font-semibold">YOUR WORKSPACES</span>
-                <div className="flex items-center mt-4 gap-8">
+                <div className="flex flex-wrap items-center mt-4 gap-8">
                     <div className="flex ml-0">
                         <span className="text-[#a2a4a7] font-bold">ISINGIZWE Jean Confiance's workspace</span>
                     </div>
 
-                    <section className="flex text-[#c5c6c9] font-semibold gap-4 my-2">
+                    <section className="flex text-[#c5c6c9] font-semibold gap-4 md:my-2">
                         <div className="flex gap-2 hover:opacity-70 bg-[#2c2c2e] p-1.5 rounded-md hover:cursor-pointer">
                             <Table color="#c5c6c9" width="16px" /><span className="text-[14px]">Boards  </span>
                         </div>
